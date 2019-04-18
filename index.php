@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
-            <div class="col-4 col-md-auto text-right">
+            <div class="col-4 text-right">
                 <h5>
                     July
                 </h5>
@@ -54,7 +54,7 @@
                     16
                 </h3>
             </div>
-            <div class="col-4 col-md-auto text-left">
+            <div class="col-4 text-left">
                 <h5>
                     2019
                 </h5>
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
-            <div class="col-5 col-md-3 col-lg-2 text-right">
+            <div class="col-4 text-right p-0">
                 <h3>
                     Yaroslav
                 </h3>
@@ -74,7 +74,7 @@
             <div class="col-auto">
                 and
             </div>
-            <div class="col-5 col-md-3 col-lg-2 text-left">
+            <div class="col-4 text-left p-0">
                 <h3>
                     Maria
                 </h3>
@@ -82,7 +82,7 @@
         </div>
         <div class="row">
             <div class="col">
-                Contact at: 555 35 35
+                Contact at: <b>8 (916) 703-82-99</b>
             </div>
         </div>
     </div>
