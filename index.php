@@ -7,34 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>Save the Date</title>
 </head>
 <body>
 <!-- Body Start justify-content-center align-items-center  -->
 
-<div class="container d-flex align-items-center justify-content-center h-100">
-    <!--
-    <div class="text-center">
-        <h3>Save date card</h3>
-        <p>
-            This is a save date card with a lot of sample text <br>
-            Lorem ipsum dolor sit amet, consectetur <br>
-            adipisicing elit. Accusamus blanditiis excepturi <br>
-            expedita incidunt magnam magni minus perspiciatis quidem?
-        </p>
-        <ul style="list-style: none; padding: 0;">
-            <li>Start date: <b>01.10.1939</b></li>
-            <li>Start place: <b>Polen</b></li>
-        </ul>
-        <p>
-            Contact us at <b>8 (800) 555-35-35</b> <br>
-            Easier to call than take a loan
-        </p>
-    </div>
-    -->
-
+<div class="container d-flex align-items-md-center justify-content-center h-100"> <!-- h-100 -->
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -67,7 +50,7 @@
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-auto text-right p-0">
-                <h3 style="margin-bottom:3px;">
+                <h3>
                     Ярослава
                 </h3>
             </div>
@@ -75,19 +58,35 @@
                 и
             </div>
             <div class="col-auto text-left p-0">
-                <h3 style="margin-bottom:3px;">
+                <h3>
                     Марии
                 </h3>
             </div>
         </div>
-        <div class="row  justify-content-md-center">
+        <div class="row justify-content-md-center">
             <div class="col col-md-6" style="border-top: 1px solid black; border-bottom: 1px solid black;">
-                Мы сейчас очень стараемся, чтобы вы хорошо провели с нами это время, и для этого важно знать точное количество гостей. Поэтому, пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день. Мы очень вас ждем, но с пониманием отнесемся к тем, кто по каким-то причинам не сможет присутствовать (при условии, что вы предупредите нас об этом заранее)
+                <p style="margin-top: 1rem">
+                    Пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день! Мы очень вас ждем:)
+                </p>
+                <p>
+                    P.S. Обратите внимание, что это пятница.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                После Вашего ответа пришлем более подбробную информацию
+                Скоро пришлем более подробную информацию
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-angle-down fa-3x"></i>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-md-6" style="font-size: 0.75rem">
+                Мы зовем на свой праздник только самых родных и близких, и будем счастливы, если у всех получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно.<br>
+                Вам может показаться, что отказываться неудобно и лучше сослаться за день до торжества на простуду, но мы обещаем, что с уважением отнесемся к вашему решению и не затаим обиду (если вы предупредите нас об этом заранее)
             </div>
         </div>
     </div>
