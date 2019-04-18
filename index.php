@@ -46,7 +46,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-4 text-right">
                 <h5>
-                    July
+                    Июль
                 </h5>
             </div>
             <div class="col-auto" style="border-left: 1px solid black; border-right: 1px solid black;">
@@ -62,27 +62,32 @@
         </div>
         <div class="row">
             <div class="col">
-                For the wedding of
+                Приглашаем тебя на свадьбу
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
-            <div class="col-4 text-right p-0">
-                <h3>
-                    Yaroslav
+            <div class="col-auto text-right p-0">
+                <h3 style="margin-bottom:3px;">
+                    Ярослава
                 </h3>
             </div>
             <div class="col-auto">
-                and
+                и
             </div>
-            <div class="col-4 text-left p-0">
-                <h3>
-                    Maria
+            <div class="col-auto text-left p-0">
+                <h3 style="margin-bottom:3px;">
+                    Марии
                 </h3>
+            </div>
+        </div>
+        <div class="row  justify-content-md-center">
+            <div class="col col-md-6" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+                Мы сейчас очень стараемся, чтобы вы хорошо провели с нами это время, и для этого важно знать точное количество гостей. Поэтому, пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день. Мы очень вас ждем, но с пониманием отнесемся к тем, кто по каким-то причинам не сможет присутствовать (при условии, что вы предупредите нас об этом заранее)
             </div>
         </div>
         <div class="row">
             <div class="col">
-                Contact at: <b>8 (916) 703-82-99</b>
+                После Вашего ответа пришлем более подбробную информацию
             </div>
         </div>
     </div>
