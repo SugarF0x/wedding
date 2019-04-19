@@ -78,7 +78,7 @@
                 Скоро пришлем более подробную информацию
             </div>
         </div>
-            <i class="fas fa-angle-down fa-3x" style="position:absolute; width: 100%; height: 100%; left: 0; top: 90%"></i>
+            <i class="fas fa-angle-down fa-3x" style="position:absolute; width: 100%; left: 0; top: 90%"></i>
         </div>
     </div>
 </div>
@@ -86,7 +86,9 @@
 <div class="container text-center">
     <div class="row justify-content-md-center">
         <div class="col col-md-6" style="font-size: 0.8rem">
-            Мы будем счастливы, если у вас получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно ❤️
+            <p>
+                Мы будем счастливы, если у вас получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно ❤️
+            </p>
         </div>
     </div>
 </div>
