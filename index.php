@@ -17,8 +17,8 @@
 <body>
 <!-- Body Start justify-content-center align-items-center  -->
 
-<div class="container d-flex align-items-md-center justify-content-center h-100"> <!-- h-100 -->
-    <div class="container text-center">
+<div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="container text-center main-section">
         <div class="row">
             <div class="col">
                 <h1>
@@ -34,7 +34,7 @@
             </div>
             <div class="col-auto" style="border-left: 1px solid black; border-right: 1px solid black;">
                 <h3>
-                    16
+                    26
                 </h3>
             </div>
             <div class="col-4 text-left">
@@ -78,16 +78,15 @@
                 Скоро пришлем более подробную информацию
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <i class="fas fa-angle-down fa-3x"></i>
-            </div>
+            <i class="fas fa-angle-down fa-3x" style="position:absolute; width: 100%; height: 100%; left: 0; top: 90%"></i>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col col-md-6" style="font-size: 0.75rem">
-                Мы зовем на свой праздник только самых родных и близких, и будем счастливы, если у всех получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно.<br>
-                Вам может показаться, что отказываться неудобно и лучше сослаться за день до торжества на простуду, но мы обещаем, что с уважением отнесемся к вашему решению и не затаим обиду (если вы предупредите нас об этом заранее)
-            </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row justify-content-md-center">
+        <div class="col col-md-6" style="font-size: 0.8rem">
+            Мы будем счастливы, если у вас получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно ❤️
         </div>
     </div>
 </div>
