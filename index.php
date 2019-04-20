@@ -43,9 +43,9 @@
                 </h5>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin: 1% 0;">
             <div class="col">
-                Приглашаем тебя на свадьбу
+                Приглашаем вас на свадьбу
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
@@ -68,13 +68,13 @@
                 <p style="margin-top: 1rem">
                     Пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день! Мы очень вас ждем:)
                 </p>
-                <p>
+                <p style="font-size: 0.75rem;">
                     P.S. Обратите внимание, что это пятница.
                 </p>
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col" style="font-size: 0.75rem; margin-top: 1%">
                 Скоро пришлем более подробную информацию
             </div>
         </div>
@@ -83,9 +83,9 @@
     </div>
 </div>
 
-<div class="container text-center">
-    <div class="row justify-content-md-center">
-        <div class="col col-md-6" style="font-size: 0.8rem">
+<div class="container text-center h-100">
+    <div class="row justify-content-md-center align-items-center h-100">
+        <div class="col col-md-6">
             <p>
                 Мы будем счастливы, если у вас получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно ❤️
             </p>
