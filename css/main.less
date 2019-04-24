@@ -1,7 +1,51 @@
 html, body {
+  background-color: #F6F6F6;
   height: 100%;
+}
+
+.flower {
+  background-image: url(../src/img/flower-circle.png);
+  background-repeat: no-repeat;
+  background-size: 150vh;
+  background-position: center top -30vh;
+}
+
+@strokec: #98FB98;
+@strokes: 	#228B22;
+
+.stroke {
+  color: @strokec;
+  -webkit-text-stroke: 0.5px @strokes;
+}
+
+@bw: 1px;
+@bc: #000;
+
+.bl {border-left:   @bw solid @bc}
+.br {border-right:  @bw solid @bc}
+.bt {border-top:    @bw solid @bc}
+.bb {border-bottom: @bw solid @bc}
+
+.footer {
+  background-color: rgba(246, 246, 246, 0.8);
+  position: relative;
+}
+
+.mh-100 {
+  min-height: 100%;
+}
+
+.mvh-100 {
+  min-height: 100vh;
 }
 
 @media (max-width: 575px) {
 
 }
+
+/*
+    TODO: bottom text
+  mate it so that the flower circle overflows to the bottom,
+  but the bottom text has a white background with opacity 50%
+  this making it stand out while leaving the flowers visible
+ */

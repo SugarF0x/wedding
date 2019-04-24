@@ -17,78 +17,79 @@
 <body>
 <!-- Body Start justify-content-center align-items-center  -->
 
-<div class="container d-flex align-items-center justify-content-center h-100">
-    <div class="container text-center main-section">
-        <div class="row">
-            <div class="col">
-                <h1>
-                    Save the date
-                </h1>
+<div class="flower mvh-100">
+    <div class="container d-flex align-items-center justify-content-center mvh-100">
+        <div class="container text-center main-section">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Save the date
+                    </h1>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-4 text-right">
-                <h5>
-                    Июль
-                </h5>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 text-right">
+                    <h5>
+                        Июль
+                    </h5>
+                </div>
+                <div class="col-auto bl br"">
+                    <h3>
+                        26
+                    </h3>
+                </div>
+                <div class="col-4 text-left">
+                    <h5>
+                        2019
+                    </h5>
+                </div>
             </div>
-            <div class="col-auto" style="border-left: 1px solid black; border-right: 1px solid black;">
-                <h3>
-                    26
-                </h3>
+            <div class="row" style="margin: 1% 0;">
+                <div class="col">
+                    Приглашаем вас на свадьбу
+                </div>
             </div>
-            <div class="col-4 text-left">
-                <h5>
-                    2019
-                </h5>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-auto text-right p-0">
+                    <h3>
+                        Ярослава
+                    </h3>
+                </div>
+                <div class="col-auto">
+                    и
+                </div>
+                <div class="col-auto text-left p-0">
+                    <h3>
+                        Марии
+                    </h3>
+                </div>
             </div>
-        </div>
-        <div class="row" style="margin: 1% 0;">
-            <div class="col">
-                Приглашаем вас на свадьбу
+            <div class="row justify-content-md-center">
+                <div class="col col-md-5 bt bb"">
+                    <p style="margin-top: 1rem">
+                        Пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день! Мы очень вас ждем:)
+                    </p>
+                    <p style="font-size: 0.75rem;">
+                        P.S. Обратите внимание, что это пятница.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-auto text-right p-0">
-                <h3>
-                    Ярослава
-                </h3>
+            <div class="row">
+                <div class="col" style="font-size: 0.75rem; margin-top: 1%">
+                    Скоро пришлем более подробную информацию
+                </div>
             </div>
-            <div class="col-auto">
-                и
-            </div>
-            <div class="col-auto text-left p-0">
-                <h3>
-                    Марии
-                </h3>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col col-md-6" style="border-top: 1px solid black; border-bottom: 1px solid black;">
-                <p style="margin-top: 1rem">
-                    Пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день! Мы очень вас ждем:)
-                </p>
-                <p style="font-size: 0.75rem;">
-                    P.S. Обратите внимание, что это пятница.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" style="font-size: 0.75rem; margin-top: 1%">
-                Скоро пришлем более подробную информацию
-            </div>
-        </div>
             <i class="fas fa-angle-down fa-3x" style="position:absolute; width: 100%; left: 0; top: 90%"></i>
         </div>
     </div>
-</div>
 
-<div class="container text-center h-100">
-    <div class="row justify-content-md-center align-items-center h-100">
-        <div class="col col-md-6">
-            <p>
-                Мы будем счастливы, если у вас получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень очень важно ❤️
-            </p>
+    <div class="container text-center footer">
+        <div class="row justify-content-md-center align-items-center">
+            <div class="col col-md-5">
+                <p style="margin-top: 1rem;">
+                    Мы будем счастливы, если у вас получится приехать. Но если вдруг вы не можете, пожалуйста, сообщите заранее. Это правда очень-очень важно ❤️
+                </p>
+            </div>
         </div>
     </div>
 </div>
