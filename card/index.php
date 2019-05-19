@@ -46,7 +46,20 @@
             </div>
             <div class="row" style="margin: 1% 0;">
                 <div class="col">
-                    Приглашаем вас на свадьбу
+                    <?php
+                        $text = '';
+                        if ($_GET['name'] !== null) {
+                            $text = '<h5>' . $_GET['name'] . '</h5>';
+                        }
+
+                        if ($_GET['many'] == 'true') {
+                            $text = $text . 'Приглашаем вас на свадьбу';
+                        } else {
+                            $text = $text . 'Приглашаем тебя на свадьбу';
+                        }
+
+                        echo $text;
+                    ?>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -67,7 +80,7 @@
             <div class="row justify-content-md-center">
                 <div class="col col-md-5 bt bb"">
                     <p style="margin-top: 1rem">
-                        Пожалуйтса, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день! Мы очень вас ждем:)
+                        Пожалуйста, до 6 мая сообщите нам, сможете ли Вы разделить с нами этот особенный день! Мы очень вас ждем:)
                     </p>
                     <p style="font-size: 0.75rem;">
                         P.S. Обратите внимание, что это пятница.
