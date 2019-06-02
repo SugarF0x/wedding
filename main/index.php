@@ -62,7 +62,7 @@
             </div>
 
             <div class="col-12">
-                [адрес]
+                Рябиновая ул., 1А, д. Голиково
             </div>
 
             <div class="col-12">
@@ -127,6 +127,10 @@
             </div>
 
             <div class="col-12">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6807d9cf881c553217d24db50383313597fe4e82bd11079d30f2e0c54aa8ef18&amp;source=constructor" width="100%" height="350" frameborder="0" style="background-color: lightgray"></iframe>
+            </div>
+
+            <div class="col-12">
                 <h4>
                     Обращаем ваше внимание на беспощадный пятничный поток дачников!
                 </h4>
@@ -157,31 +161,31 @@
                 <ul>
                     <li>
                         <div class="text">
-                            <object type="image/svg+xml" data="src/svg/cheers.svg" width="100%" height="100%"></object>
+                            <object type="image/svg+xml" data="src/svg/cheers.svg" width="80%" height="80%"></object>
                             <p>Cбор гостей</p>
                         </div>
-                        <time>3:00</time>
+                        <time>15:00</time>
                     </li>
                     <li>
                         <div class="text">
                             <object type="image/svg+xml" data="src/svg/surprise.svg" width="100%" height="100%"></object>
                             <p>Сюрприз</p>
                         </div>
-                        <time>3:30</time>
+                        <time>15:30</time>
                     </li>
                     <li>
                         <div class="text">
                             <object type="image/svg+xml" data="src/svg/ring.svg" width="100%" height="100%"></object>
                             <p>Церемония</p>
                         </div>
-                        <time>4:00</time>
+                        <time>16:00</time>
                     </li>
                     <li>
                         <div class="text">
                             <object type="image/svg+xml" data="src/svg/dinner.svg" width="100%" height="100%"></object>
                             <p>Начало банкета</p>
                         </div>
-                        <time>5:00</time>
+                        <time>17:00</time>
                     </li>
                     <li>
                         <div class="text">
@@ -232,7 +236,7 @@
 
             <div class="col-sm-6 d-sm-inline-flex">
                 <div class="col-12 col-sm-4">
-                    <object type="image/svg+xml" data="src/svg/suit.svg" width="100%" height="100%"></object>
+                    <object class="wear__suit" type="image/svg+xml" data="src/svg/suit.svg" width="100%" height="100%"></object>
                 </div>
                 <div class="col-12 col-sm-8">
                     <ul>
@@ -246,13 +250,13 @@
                 </div>
             </div>
             <div class="col-sm-6 d-sm-inline-flex">
-                <div class="col-12 col-sm-4">
-                    <object type="image/svg+xml" data="src/svg/dress.svg" width="100%" height="100%"></object>
+                <div class="col-12 position-relative col-sm-4">
+                    <object class="wear__dress" type="image/svg+xml" data="src/svg/dress.svg" width="100%" height="100%"></object>
                 </div>
                 <div class="col-12 col-sm-8">
                     <ul>
                         <li>
-                            Платье или сарафан не выше колена с пастельных тонах
+                            Платье или сарафан не выше колена в пастельных тонах
                         </li>
                         <li>
                             Каблук не обязателен
@@ -273,35 +277,62 @@
 
     <section class="container" id="gift">
         <div class="row text-center align-items-center justify-content-center">
-            <div class="col">
-                <h2>
-                    Что подарить
-                </h2>
-
-                <div class="col-sm-6">
-                    <!-- money -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-5">
+                        Что подарить
+                    </h2>
                 </div>
-                <div class="col-sm-6">
+
+                <div class="col-6">
+                    <object type="image/svg+xml" data="src/svg/money.svg" width="100%" height="100%"></object>
+                </div>
+                <div class="col-6">
                     <p>
                         Деньги
                     </p>
                 </div>
 
-                <div class="col-sm-6">
-                    <!-- smile -->
+                <div class="col-6">
+                    <object type="image/svg+xml" data="src/svg/smile.svg" width="100%" height="100%"></object>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-6">
                     <p>
                         Хорошее настроение
                     </p>
                 </div>
-                <div class="col-sm-6">
-                    <!-- sing -->
+
+                <div class="col-6">
+                    <object type="image/svg+xml" data="src/svg/singer.svg" width="100%" height="100%"></object>
+                    <object type="image/svg+xml" data="src/svg/dancer.svg" width="100%" height="100%"></object>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-6">
                     <p>
                         Творческие подарки
                     </p>
+                </div>
+
+                <!-- ass -->
+
+                <div class="col-6 col-sm-3">
+                    <div class="col-12 cross">
+                        <object type="image/svg+xml" data="src/svg/teapot.svg" width="100%" height="100%"></object>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="col-12 cross">
+                        <object type="image/svg+xml" data="src/svg/towel.svg" width="100%" height="100%"></object>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="col-12 cross">
+                        <object type="image/svg+xml" data="src/svg/decanter.svg" width="100%" height="100%"></object>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="col-12 cross">
+                        <object type="image/svg+xml" data="src/svg/frame.svg" width="100%" height="100%"></object>
+                    </div>
                 </div>
             </div>
         </div>
