@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Caveat Regular';
+  src: url('fonts/Caveat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+small {
+  font-family: 'Caveat Regular';
+  font-size: 120% !important;
+}
+
+h2 {
+  font-family: Lobster;
+}
+
+h4 {
+  font-family: Pacifico;
+}
+
+//
+
 html, body {
   font-size: 125%;
   height: 100%;
@@ -23,6 +45,14 @@ body > .bumper {
   margin: 10vh 0;
 }
 
+p, li {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.container {
+  background-color: rgba(255,255,255,0.5);
+}
+
 /*
 body > section:nth-of-type(2n) {
    background-color: skyblue;
@@ -42,16 +72,55 @@ body > section:nth-of-type(2n-1) {
   margin-bottom: 0.5rem;
 }
 
+#head {
+  .head__date {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    .head__date-mid {
+      p:nth-of-type(1) {
+        margin-bottom: -0.5rem;
+      }
+      p:nth-of-type(3) {
+        margin-top: -0.5rem;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    div:nth-of-type(1), div:nth-of-type(3) {
+      width: 5rem;
+    }
+
+    div:nth-of-type(1) {
+      text-align: right;
+    }
+
+    div:nth-of-type(3) {
+      text-align: left;
+    }
+
+    p:nth-of-type(2) {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      margin: 0 1rem;
+      padding: 0 1rem;
+    }
+  }
+}
+
 #get-to {
   i {
     font-size: 400%;
   }
-}
-
-#contact {
-  i {
-    font-size: 600%;
-    margin: 2rem 0;
+  @media (min-width: 576px) {
+    .get-to__text {
+      font-size: 75%;
+    }
   }
 }
 
@@ -197,20 +266,82 @@ body > section:nth-of-type(2n-1) {
 }
 
 #gift {
+  //.col-6 {
+  //  max-height: 5rem;
+  //}
+  overflow: hidden;
   object {
     display: inline-block;
-    height: 45%;
-    width: 45%;
+    height: 55%;
+    width: 55%;
   }
   .cross:after {
     content: '';
     display: block;
     position: relative;
-    top: -2rem;
-    left: 1rem;
-    width: 75%;
-    border-bottom: 3px solid black;
+    width: 150%;
     transform: rotate(45deg);
+    border-bottom: 2px solid black;
+    outline: 2px solid white;
+    top: -1.5rem;
+    left: -0.4rem;
+  }
+  p {
+    font-size: 100%;
+  }
+  .gift__bad > p {
+    font-size: 50%;
+  }
+  .gift__bad {
+    object {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 576px) {
+    p {
+      font-size: 100%;
+    }
+    object {
+      height: 65%;
+      width: 65%;
+    }
+    .gift__1, .gift__2 > p {
+      text-align: center !important;
+    }
+    .gift__1 {
+      order: 1;
+    }
+    .gift__2 {
+      order: 2;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+    }
+    .gift__bad {
+      order: 3;
+      p {
+        font-size: 70%;
+      }
+      object {
+        height: 45%;
+        width: 45%;
+      }
+    }
+    .cross:after {
+      top: -2rem;
+      left: 1rem;
+      width: 75%;
+      border-bottom: 5px solid black;
+      outline: 5px solid white;
+    }
+  }
+}
+
+#contact {
+  i {
+    font-size: 300%;
+    margin: 2rem 0;
   }
 }
 

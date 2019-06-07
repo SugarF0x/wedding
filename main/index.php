@@ -8,16 +8,17 @@
     <title>Wedding Main</title>
 
     <link rel="stylesheet" href="styles/style.css">
-    <!--
-    <link rel="stylesheet" href="styles/timeline.css">
-    -->
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
 </head>
 <body>
     <section class="container" id="head">
@@ -25,44 +26,62 @@
             <div class="col-12">
                 <p>
                     <?php
-                    $text = '';
-                    if ($_GET['name'] !== null) {
-                        $text = '<h5>' . $_GET['name'] . '</h5>';
-                    }
+                    if ($_GET['name'] != null) {
 
-                    if ($_GET['many'] == 'true') {
-                        $text = $text . 'Приглашаем вас на свадьбу';
+                        $text = '';
+
+                        if ($_GET['type'] == 'he') {
+                            $text = $text . 'Дорогой ';
+                        } elseif ($_GET['type'] == 'she') {
+                            $text = $text . 'Дорогая ';
+                        } elseif ($_GET['type'] == 'many') {
+                            $text = $text . 'Дорогие ';
+                        }
+                        $text = $text . '<b>' . $_GET['name'] . '</b>' . ', приглашаем ';
+
+                        if ($_GET['resp'] == 'true') {
+                            $text = $text . 'Вас ';
+                        } elseif ($_GET['type'] == 'he' || $_GET['type'] == 'she') {
+                            $text = $text . 'тебя ';
+                        } elseif ($_GET['type'] == 'many') {
+                            $text = $text . 'вас ';
+                        }
+                        $text = $text . 'на свадьбу';
+
+                        echo '<p>' . $text . '</p>';
                     } else {
-                        $text = $text . 'Приглашаем тебя на свадьбу';
+                        echo '<p>Приглашаем <b>Вас</b> на свадьбу</p>';
                     }
-
-                    echo $text;
                     ?>
                 </p>
             </div>
 
             <div class="col-12">
-                <h6 class="name">
+                <h4 class="name">
                     Тузовой Марии
-                </h6>
+                </h4>
 
                 <h3 id="name__breaker">
                     &
                 </h3>
 
-                <h6 class="name">
+                <h4 class="name">
                     Еремеева Ярослава
-                </h6>
+                </h4>
+            </div>
+
+            <div class="col-12 head__date">
+                <div>Пятница</div>
+                <div class="head__date-mid">
+                    <p>Июль</p>
+                    <p style="font-size: 2.5rem;">26</p>
+                    <p>2019</p>
+                </div>
+                <div>15:00</div>
             </div>
 
             <div class="col-12">
-                <span>Июль</span>
-                <span>26</span>
-                <span>2019</span>
-            </div>
-
-            <div class="col-12">
-                Рябиновая ул., 1А, д. Голиково
+                Отель Art Village
             </div>
 
             <div class="col-12">
@@ -78,6 +97,8 @@
         <div class="row text-center h-100 align-items-baseline justify-content-center">
             <div class="col-12">
                 <h2>Как добраться?</h2>
+
+                <h4>Рябиновая ул., 1А, д. Голиково</h4>
             </div>
 
             <div class="col-sm-4 mt-3 mb-3">
@@ -85,7 +106,7 @@
                     <i class="fas fa-car"></i>
                 </div>
                 <div class="col-12">
-                    <p class="mt-3 border-bottom border-top border-dark">
+                    <p class="mt-3 border-bottom border-top border-dark get-to__text">
                         Не забудьте вовремя съехать с Ленинградского шоссе на Новосходненское у МЕГА Химки, а подъезжая к Сходне - налево перед магазином “Лента”. Не пугайтесь не очень симпатичной дороги поначалу - вы уже совсем близко к цели. Продолжайте движение по ул.Усково и скоро вы на месте!
                     </p>
                 </div>
@@ -100,7 +121,7 @@
                     <i class="fas fa-train"></i>
                 </div>
                 <div class="col-12">
-                    <p class="mt-3 border-bottom border-top border-dark">
+                    <p class="mt-3 border-bottom border-top border-dark get-to__text">
                         Добраться можно и общественным транспортом. Оптимальный вариант - электричкой с Ленинградского вокзала до станции Сходня, а далее - на такси (150 рублей на Убере или Яндексе). Берите наряды с собой, на нашей площадке можно будет комфортно переодеться!
                     </p>
                 </div>
@@ -115,7 +136,7 @@
                     <i class="fas fa-taxi"></i>
                 </div>
                 <div class="col-12">
-                    <p class="mt-3 border-bottom border-top border-dark">
+                    <p class="mt-3 border-bottom border-top border-dark get-to__text">
                         Поездка на такси из центра Москвы или Королёва обойдётся примерно в 800 рублей на машине эконом-класса или 1100 рублей на авто класса “комфорт”. Выезжайте компанией - это выгоднее и веселее!
                     </p>
                 </div>
@@ -284,55 +305,52 @@
                     </h2>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-sm-4 text-right gift__1">
                     <object type="image/svg+xml" data="src/svg/money.svg" width="100%" height="100%"></object>
                 </div>
-                <div class="col-6">
-                    <p>
-                        Деньги
-                    </p>
+                <div class="col-6 col-sm-4 gift__2">
+                    <p class="text-left">Деньги</p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-sm-4 text-right gift__1">
                     <object type="image/svg+xml" data="src/svg/smile.svg" width="100%" height="100%"></object>
                 </div>
-                <div class="col-6">
-                    <p>
-                        Хорошее настроение
-                    </p>
+                <div class="col-6 col-sm-4 gift__2">
+                    <p class="text-left">Хорошее настроение</p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-sm-4 text-right gift__1">
                     <object type="image/svg+xml" data="src/svg/singer.svg" width="100%" height="100%"></object>
-                    <object type="image/svg+xml" data="src/svg/dancer.svg" width="100%" height="100%"></object>
                 </div>
-                <div class="col-6">
-                    <p>
-                        Творческие подарки
-                    </p>
+                <div class="col-6 col-sm-4 gift__2">
+                    <p class="text-left">Творческие подарки</p>
                 </div>
 
-                <!-- ass -->
+                <!-- bad -->
 
-                <div class="col-6 col-sm-3">
+                <div class="col-3 gift__bad">
                     <div class="col-12 cross">
                         <object type="image/svg+xml" data="src/svg/teapot.svg" width="100%" height="100%"></object>
                     </div>
+                    <p>Сервиз</p>
                 </div>
-                <div class="col-6 col-sm-3">
+                <div class="col-3 gift__bad">
                     <div class="col-12 cross">
                         <object type="image/svg+xml" data="src/svg/towel.svg" width="100%" height="100%"></object>
                     </div>
+                    <p>Полотенце/<br>Постельное бельё</p>
                 </div>
-                <div class="col-6 col-sm-3">
+                <div class="col-3 gift__bad">
                     <div class="col-12 cross">
                         <object type="image/svg+xml" data="src/svg/decanter.svg" width="100%" height="100%"></object>
                     </div>
+                    <p>Деконтер или любые другие навороченные штуки</p>
                 </div>
-                <div class="col-6 col-sm-3">
+                <div class="col-3 gift__bad">
                     <div class="col-12 cross">
                         <object type="image/svg+xml" data="src/svg/frame.svg" width="100%" height="100%"></object>
                     </div>
+                    <p>Декор</p>
                 </div>
             </div>
         </div>
