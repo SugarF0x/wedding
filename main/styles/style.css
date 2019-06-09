@@ -14,6 +14,10 @@ h2 {
 h4 {
   font-family: Pacifico;
 }
+p,
+li {
+  font-family: 'Didact Gothic', sans-serif;
+}
 html,
 body {
   font-size: 125%;
@@ -36,14 +40,34 @@ body > section:nth-of-type(1) > .row {
 body > .bumper {
   background-image: url("../src/img/bumper.png");
   background-size: contain;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center;
   min-height: 15vh;
   margin: 10vh 0;
 }
-p,
-li {
-  font-family: 'Didact Gothic', sans-serif;
+body:before {
+  content: '';
+  display: block;
+  background-image: url("../src/img/bumper-big.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  height: 20vh;
+  width: 90vw;
+  margin-bottom: -5vh;
+  margin-left: 5vw;
+}
+body:after {
+  content: '';
+  display: block;
+  background-image: url("../src/img/bumper-big.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  width: 90vw;
+  margin-left: 5vw;
 }
 .container {
   background-color: rgba(255, 255, 255, 0.5);
@@ -66,32 +90,40 @@ body > section:nth-of-type(2n-1) {
   border-bottom: 1px solid black;
   margin-bottom: 0.5rem;
 }
-#head .head__date {
+#head #head__date {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
 }
-#head .head__date .head__date-mid p:nth-of-type(1) {
+#head #head__date #head__date-time span {
+  display: inline-block;
+}
+#head #head__date #head__date-time span:nth-of-type(2) {
+  font-size: 50%;
+  vertical-align: top;
+  height: 2rem;
+}
+#head #head__date #head__date-mid p:nth-of-type(1) {
   margin-bottom: -0.5rem;
 }
-#head .head__date .head__date-mid p:nth-of-type(3) {
+#head #head__date #head__date-mid p:nth-of-type(3) {
   margin-top: -0.5rem;
 }
-#head .head__date p {
+#head #head__date p {
   margin-bottom: 0;
 }
-#head .head__date div:nth-of-type(1),
-#head .head__date div:nth-of-type(3) {
+#head #head__date div:nth-of-type(1),
+#head #head__date div:nth-of-type(3) {
   width: 5rem;
 }
-#head .head__date div:nth-of-type(1) {
+#head #head__date div:nth-of-type(1) {
   text-align: right;
 }
-#head .head__date div:nth-of-type(3) {
+#head #head__date div:nth-of-type(3) {
   text-align: left;
 }
-#head .head__date p:nth-of-type(2) {
+#head #head__date p:nth-of-type(2) {
   border-left: 1px solid black;
   border-right: 1px solid black;
   margin: 0 1rem;
@@ -266,6 +298,9 @@ body > section:nth-of-type(2n-1) {
   height: 100%;
   width: 100%;
 }
+#gift .gift__10 object {
+  height: 100px;
+}
 @media (min-width: 576px) {
   #gift p {
     font-size: 100%;
@@ -303,9 +338,56 @@ body > section:nth-of-type(2n-1) {
     border-bottom: 5px solid black;
     outline: 5px solid white;
   }
+  #gift .gift__10 object {
+    height: 50%;
+  }
+  #gift .gift__10 object:first-of-type {
+    margin-top: 2rem;
+  }
+}
+#contact {
+  min-height: initial;
+}
+#contact .row {
+  min-height: initial;
 }
 #contact i {
   font-size: 300%;
   margin: 2rem 0;
+}
+* h2 {
+  font-family: 'Cormorant Infant', serif;
+}
+* h4,
+* small {
+  font-family: 'Cormorant Infant', serif;
+}
+* p,
+* li {
+  font-family: 'Poiret One', cursive;
+}
+* #head__greet {
+  font-family: 'Poiret One', cursive;
+  font-size: 125%;
+}
+* #head__greet #head__greet-name {
+  font-family: 'Cormorant Infant', serif;
+}
+* #head__names * {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 250%;
+}
+* #head__names #name__breaker {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+* #head__date * {
+  font-family: 'Lora', serif;
+}
+* #head__place {
+  font-family: 'Lora', serif;
+}
+* #head__footer * {
+  font-family: 'Poiret One', cursive;
 }
 /*# sourceMappingURL=style.css.map */

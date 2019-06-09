@@ -19,12 +19,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap&subset=cyrillic-ext">
 </head>
 <body>
     <section class="container" id="head">
         <div class="row text-center h-100 align-items-center justify-content-center">
             <div class="col-12">
-                <p>
+                <p id="head__greet">
                     <?php
                     if ($_GET['name'] != null) {
 
@@ -37,7 +40,7 @@
                         } elseif ($_GET['type'] == 'many') {
                             $text = $text . 'Дорогие ';
                         }
-                        $text = $text . '<b>' . $_GET['name'] . '</b>' . ', приглашаем ';
+                        $text = $text . '<span id="head__greet-name">' . $_GET['name'] . '</span>' . ', приглашаем ';
 
                         if ($_GET['resp'] == 'true') {
                             $text = $text . 'Вас ';
@@ -48,17 +51,17 @@
                         }
                         $text = $text . 'на свадьбу';
 
-                        echo '<p>' . $text . '</p>';
+                        echo $text;
                     } else {
-                        echo '<p>Приглашаем <b>Вас</b> на свадьбу</p>';
+                        echo 'Приглашаем <b>Вас</b> на свадьбу';
                     }
                     ?>
                 </p>
             </div>
 
-            <div class="col-12">
+            <div class="col-12" id="head__names">
                 <h4 class="name">
-                    Тузовой Марии
+                    Ярослава
                 </h4>
 
                 <h3 id="name__breaker">
@@ -66,28 +69,31 @@
                 </h3>
 
                 <h4 class="name">
-                    Еремеева Ярослава
+                    Марии
                 </h4>
             </div>
 
-            <div class="col-12 head__date">
-                <div>Пятница</div>
-                <div class="head__date-mid">
-                    <p>Июль</p>
+            <div class="col-12" id="head__date">
+                <div>пт</div>
+                <div id="head__date-mid">
+                    <p><i>июль</i></p>
                     <p style="font-size: 2.5rem;">26</p>
-                    <p>2019</p>
+                    <p><i>2019</i></p>
                 </div>
-                <div>15:00</div>
+                <div id="head__date-time">
+                    <span>15</span>
+                    <span><u>00</u></span>
+                </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12" id="head__place">
                 Отель Art Village
             </div>
 
-            <div class="col-12">
-                <small>
+            <div class="col-12" id="head__footer">
+                <p>
                     Пожалуйста, не опаздывайте, у нас есть для вас небольшой сюрприз в начале праздника :)
-                </small>
+                </p>
             </div>
         </div>
     </section>
@@ -288,10 +294,6 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="col-12">
-                <img class='palette' src="https://via.placeholder.com/250x100/C5C6CA/FFFFFF?text=ПАЛИТРА" alt="pallet">
-            </div>
         </div>
     </section>
     <div class="bumper"></div>
@@ -352,6 +354,26 @@
                     </div>
                     <p>Декор</p>
                 </div>
+
+                <!-- Slide 10 -->
+
+                <div class="col-12 col-sm-6 order-3 gift__10">
+                    <object type="image/svg+xml" data="src/svg/gift.svg"></object>
+                </div>
+                <div class="col-12 col-sm-6 order-3 gift__10">
+                    <p class="m-3">
+                        P.S. Если вы все же очень хотите подарить что-то помимо вклада в бюджет нашей молодой семьи, то мы будем рады
+                        небольшим подарочкам. Особенно сделанным своими руками!
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 order-3 gift__10">
+                    <object type="image/svg+xml" data="src/svg/plant.svg" width="100%" height="100%"></object>
+                </div>
+                <div class="col-12 col-sm-6 order-3 gift__10">
+                    <p class="m-3">
+                        Пожалуйста, не дарите нам срезанные цветы. Если вам кажется, что праздник без них не праздник, то мы будем очень рады получить от вас растение в горшке. Мы их горячо любим и с большой теплотой будем вспоминать о вас, глядя на ваш подарок еще долгие годы:)
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -363,6 +385,9 @@
                 <h2>
                     С кем связаться?
                 </h2>
+                <h4>
+                    (помимо нас)
+                </h4>
             </div>
 
             <div class="col-sm-6">
@@ -375,22 +400,6 @@
                     </h5>
                     <p>
                         Яна, наш свадебный организатор
-                    </p>
-                </div>
-                <div class="col-12">
-                    <h5>
-                        8 800 555 35 35
-                    </h5>
-                    <p>
-                        Проще позвонить, чем у кого-то занимать
-                    </p>
-                </div>
-                <div class="col-12">
-                    <h5>
-                        112
-                    </h5>
-                    <p>
-                        Доставка проблем бесплатно
                     </p>
                 </div>
             </div>
