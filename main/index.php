@@ -325,7 +325,7 @@
                     <object type="image/svg+xml" data="src/svg/singer.svg" width="100%" height="100%"></object>
                 </div>
                 <div class="col-6 col-sm-4 gift__2">
-                    <p class="text-left">Творческие подарки</p>
+                    <p class="text-left">Творческие подарки *</p>
                 </div>
 
                 <!-- bad -->
@@ -353,6 +353,12 @@
                         <object type="image/svg+xml" data="src/svg/frame.svg" width="100%" height="100%"></object>
                     </div>
                     <p>Декор</p>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <p class="m-3" style="font-size: 0.75rem; text-align: justify;">
+                        * Особая благодарность тем смельчакам, кто захочет поучаствовать в нашей программе. Мы знаем, как вы талантливы, и нам кажется, что атмосфера дружеского капустника - это именно то, что нужно нашему празднику! Если захотите украсить наш вечер своим выступлением, напишите нам.
+                    </p>
                 </div>
 
                 <!-- Slide 10 -->
