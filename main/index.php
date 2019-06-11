@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Maria's wedding landing page">
     <meta name="author" content="Sugar_F0x">
     <!-- <link rel="icon" href="img/sgfx.png"> -->
@@ -128,7 +128,7 @@
                 </div>
                 <div class="col-12">
                     <p class="mt-3 border-bottom border-top border-dark get-to__text">
-                        Добраться можно и общественным транспортом. Оптимальный вариант - электричкой с Ленинградского вокзала до станции Сходня, а далее - на такси (150 рублей на Убере или Яндексе). Берите наряды с собой, на нашей площадке можно будет комфортно переодеться!
+                        Добраться можно и общественным транспортом. Оптимальный вариант - электричкой с Ленинградского вокзала до станции Сходня, а далее - на такси (150 рублей на Убере или Яндексе).
                     </p>
                 </div>
                 <div class="col-12">
@@ -346,7 +346,7 @@
                     <div class="col-12 cross">
                         <object type="image/svg+xml" data="src/svg/decanter.svg" width="100%" height="100%"></object>
                     </div>
-                    <p>Деконтер или любые другие навороченные штуки</p>
+                    <p>Декантер или любые другие навороченные штуки</p>
                 </div>
                 <div class="col-3 gift__bad">
                     <div class="col-12 cross">
